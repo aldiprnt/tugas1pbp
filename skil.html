@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill dan Kemampuan - Kadek Aldi Pranata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .skill-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 20px;
+        }
+
+        .skill-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .skill-list li::before {
+            content: "\f058";
+            /* FontAwesome check-circle */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Daftar Skill Teknis</h1>
+    </header>
+    <div class="container">
+        <main class="main-card">
+            <a href="index.html" class="btn" style="margin-bottom: 20px;">
+                <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Kembali ke Beranda
+            </a>
+            <h2>Kemampuan Saya</h2>
+            <ul class="skill-list">
+                <li>Megambel</li>
+                <li>Menari</li>
+                <li>Pingpong</li>
+                <li>Catur</li>
+                <li>Nyurat Aksara Bali</li>
+                <li>Game</li>
+            </ul>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout HTML - Kadek Aldi Pranata</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+        }
+
+        .table-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 30px;
+            vertical-align: top;
+        }
+
+        /* Style Header Table */
+        .layout-header {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 40px 20px;
+        }
+
+        /* Style Sidebar Table */
+        .layout-sidebar {
+            width: 25%;
+            background-color: #f1f5f9;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .layout-sidebar h3 {
+            margin-top: 0;
+            color: #1e293b;
+        }
+
+        .layout-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .layout-sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .layout-sidebar a {
+            display: block;
+            padding: 10px 15px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
+        .layout-sidebar a:hover {
+            background-color: #e2e8f0;
+        }
+
+        /* Style Main Content Table */
+        .layout-main {
+            width: 75%;
+            background-color: white;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .layout-main h2 {
+            margin-top: 0;
+            color: #1d4ed8;
+        }
+
+        .layout-main p {
+            color: #64748b;
+        }
+
+        /* Style Footer Table */
+        .layout-footer {
+            background-color: #1e293b;
+            color: #94a3b8;
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 20px;
+        }
+
+        /* Tombol */
+        .btn-kembali {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-kembali:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table>
+            <!-- Bagian Header (1 baris, membentang 2 kolom) -->
+            <tr>
+                <td colspan="2" class="layout-header">
+                    Header Website
+                </td>
+            </tr>
+
+            <!-- Bagian Konten Tengah (1 baris, 2 kolom) -->
+            <tr>
+                <!-- Kolom Sidebar -->
+                <td class="layout-sidebar">
+                    <h3>Menu Navigasi</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home" style="width: 25px;"></i> Beranda</a></li>
+                        <li><a href="pendidikan.html"><i class="fas fa-graduation-cap" style="width: 25px;"></i>
+                                Pendidikan</a></li>
+                        <li><a href="skil.html"><i class="fas fa-code" style="width: 25px;"></i> Skill</a></li>
+                    </ul>
+                </td>
+
+                <!-- Kolom Main Content -->
+                <td class="layout-main">
+                    <h2>Konten Utama (Main Content)</h2>
+                    <p>Selamat datang di halaman layout website yang menggunakan <b>Tag Table HTML</b>. Ini merupakan
+                        contoh bagaimana tag table yang semula diciptakan untuk data tabular, pernah digunakan untuk
+                        menata struktur tata letak (layout) halaman pada zaman awal web development sebelum CSS modern
+                        hadir.</p>
+
+                    <p>Halaman ini berisi komponen-komponen utama sebagai berikut:</p>
+                    <ul>
+                        <li><strong>Header:</strong> Bagian atas yang berisi judul atau banner situs.</li>
+                        <li><strong>Sidebar:</strong> Berada di kiri/kanan sebagai area navigasi atau menu tambahan.
+                        </li>
+                        <li><strong>Main Content:</strong> Area konten utama yang berada di sebelah sidebar.</li>
+                        <li><strong>Footer:</strong> Bagian penutup di tabel paling bawah.</li>
+                    </ul>
+
+                    <a href="index.html" class="btn-kembali"><i class="fas fa-arrow-left"
+                            style="margin-right: 8px;"></i> Kembali ke Beranda</a>
+                </td>
+            </tr>
+
+            <!-- Bagian Footer (1 baris, membentang 2 kolom) -->
+            <tr>
+                <td colspan="2" class="layout-footer">
+                    &copy; 2026 Kadek Aldi Pranata. Ini merupakan bagian Footer Table.
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
